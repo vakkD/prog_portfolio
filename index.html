@@ -1,12 +1,30 @@
 <!doctype html>
 <html>
 <head>
+ <style>
+   .button-container {
+    width: 520px;
+    background: gray;
+    overflow-y: auto;
+}
+
+.button-container > a {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background: lightgray;   
+    margin: 15px;
+}
+  </style>
 <title>Dylan Programming Portfolio</title>
 <meta name="description" content="Our first page">
 <meta name="keywords" content="html tutorial template">
 </head>
 <body>
   <p style="color:red;">Content goes ssshereTEST.</p>
-  <button type="button">Click Me!</button>
+  <div class ="button-container">
+    <button type="button">Click Me!</button>
+    <button type="button">Click Me2</button>
+  </div>
 </body>
 </html>
