@@ -3,18 +3,39 @@
 
 <head>
     <style>
+        .center {
+            width: 50%;
+            margin: auto;
+            position: relative;
+        }
+
         .button-container {
-            width: 520px;
+            width: auto;
             background: gray;
             overflow-y: auto;
+            
         }
 
         .button-container>a {
-            width: 100px;
+            width: calc(100%-20px);
             height: 100px;
             float: left;
             background: lightgray;
             margin: 15px;
+        }
+
+        .button {
+            background-color: gray;
+            border: 2px solid;
+            border-radius: 10px;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
         }
 
         .tab button {
@@ -22,10 +43,10 @@
 
             border-style: solid;
             border-width: 3px;
-            border-top-left-radius: 40px;
-            border-bottom-right-radius: 40px;
-            border-bottom-left-radius: 40px;
-            border-top-right-radius: 40px;
+            border-top-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-top-right-radius: 4px;
             background: yellow;
             width: 335px;
             padding: 20px;
@@ -105,7 +126,7 @@
         }
 
         .tablink:hover {
-            background-color: #777;
+            background-color: black;
         }
 
         /* Style the tab content (and add height:100% for full page content) */
@@ -121,7 +142,7 @@
         }
 
         #Calculator {
-            background-color: green;
+            background-color: black;
         }
 
         #Contact {
@@ -141,27 +162,35 @@
 <body>
     <p style="color:red; text-align:centre;">Content oes ssshereTEST.</p>
 
-    <div class="button-container tab">
-        <!--<button type="button">Click Me!</button>
+    <!-- <div class="button-container">
+    <button type="button">Click Me!</button>
     <button type="button">Click Me2</button>
    
-   <a href="#Action1">Calculator</a>
-   <a href="#Action1">test</a>
-   <a href="#Action1">TE55555ST333335</a>-->
+   <a href="#Action1" class="button">Calculator</a>
+   <a href="#Action1" class="button">test</a>
+   <a href="#Action1" class="button">TE55555ST333335</a>
+    </div> -->
 
-        <button class="tablinks" onclick=</div>
+    <div class="center" style="background-color:black">
+        <div class="center">
+    <a href="#Action1" class="button">Calculator</a>
+    <a href="#Action1" class="button">Calcula22tor</a>
+    </div>
+    </div>
+
+    
 
 
 
             <div class="tab">
-                <button class="tablinks" onclick="openPage('Home', this, 'black')">TEST</button>
-                <button class="tablinks" onclick="openPage('Calculator', this, 'black')">Paris</button>
+                <button class="tablinks" onclick="openPage('Home', this, 'green')">TEST</button>
+                <button class="tablinks" onclick="openPage('Calculator', this, 'green')">calc</button>
                 <button class="tablinks" onclick="changeTab(event, 'Tokyo')">Tokyo</button>
             </div>
 
             <div id="Calculator" class="tabcontent">
                 <h3>London</h3>
-                <div style="text-align:center;"><iframe title="Inline Frame Example" width="1000" height="700"
+                <div style="text-align:center;"><iframe title="Inline Frame Example" width="1400" height="900"
                         src="https://dotnetfiddle.net/">
                     </iframe></div>
             </div>
