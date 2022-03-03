@@ -34,11 +34,19 @@
    display:inline-block;
    position:relative;
   }
+  
+  let newWidth = screen.width;
+  
+  #embed {
+   width=newWidth;
+  }
   </style>
+ 
 <title>Dylan Programming Portfolio</title>
 <meta name="description" content="Our first page">
 <meta name="keywords" content="html tutorial template">
 </head>
+ 
 <body>
   <p style="color:red; text-align:centre;">Content goes ssshereTEST.</p>
   <div class ="button-container">
@@ -49,13 +57,13 @@
    <a href="#Action1">TES425</a>
    <a href="#Action1">TEST333335</a>
   </div>
- <iframe id="inlineFrameExample"
+ 
+ <iframe id="embed"
     title="Inline Frame Example"
     width="3000"
     height="2000"
     src="https://dotnetfiddle.net/">
 </iframe>
 
- 
 </body>
 </html>
